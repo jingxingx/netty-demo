@@ -9,49 +9,7 @@
     <!--<context:property-placeholder location="classpath*:mycat.properties" />
     <import resource="spring-config-db.xml"/>
     <import resource="dubbo-provider.xml"/>-->
-    <bean id="rocketConsumer" class="com.secoo.rocketmq.Consumer1">
-        <property name="namesrvAddr" value="10.185.240.115:9876;10.185.240.117:9876"/>
-        <property name="consumerGroup" value="group1_cluter"/>
-        <property name="topic" value="TopicTest2"/>
-        <property name="tags" value="TagA"/>
-        <property name="messageModel" value="CLUSTERING"/>
-    </bean>
 
-    <bean id="rocketConsumer1" class="com.secoo.rocketmq.Consumer1">
-        <property name="namesrvAddr" value="10.185.240.115:9876;10.185.240.117:9876"/>
-        <property name="consumerGroup" value="group1_cluter"/>
-        <property name="topic" value="TopicTest2"/>
-        <property name="tags" value="TagA"/>
-        <property name="messageModel" value="CLUSTERING"/>
-    </bean>
-
-    <bean id="rocketConsumer2" class="com.secoo.rocketmq.Consumer1">
-        <property name="namesrvAddr" value="10.185.240.115:9876;10.185.240.117:9876"/>
-        <property name="consumerGroup" value="group2_cluter"/>
-        <property name="topic" value="TopicTest2"/>
-        <property name="tags" value="TagA"/>
-        <property name="messageModel" value="CLUSTERING"/>
-    </bean>
-
-    <bean id="rocketConsumer3" class="com.secoo.rocketmq.Consumer1">
-        <property name="namesrvAddr" value="10.185.240.115:9876;10.185.240.117:9876"/>
-        <property name="consumerGroup" value="group2_cluter"/>
-        <property name="topic" value="TopicTest2"/>
-        <property name="tags" value="TagA"/>
-        <property name="messageModel" value="CLUSTERING"/>
-    </bean>
-
-    <!--<bean id="producer1" class="com.secoo.rocketmq.PushRocketMQProducer">
-        <property name="namesrvAddr" value="10.185.240.115:9876;10.185.240.117:9876"/>
-        <property name="topic" value="TopicTest1"/>
-        <property name="tags" value="TagA"/>
-    </bean>-->
-
-    <!--<bean id="producer2" class="com.secoo.rocketmq.PushRocketMQProducer">
-        <property name="namesrvAddr" value="10.185.240.115:9876;10.185.240.117:9876"/>
-        <property name="topic" value="TopicTest2"/>
-        <property name="tags" value="TagB"/>
-    </bean>-->
-    <context:component-scan base-package="com.secoo"/>
+    <context:component-scan base-package="com.netty"/>
 
 </beans>
